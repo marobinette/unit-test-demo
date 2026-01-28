@@ -2,6 +2,10 @@ import math
 
 
 def format_file_size(size_bytes):
+    # if size bytest is not an integer, raise ValueError
+    if not isinstance(size_bytes, int):
+        raise ValueError("Size must be an integer")
+
     if size_bytes < 0:
         raise ValueError("Size cannot be negative")
 
