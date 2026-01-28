@@ -3,6 +3,7 @@ testpaths = ["tests"]
 
 [tool.coverage.run]
 source = ["."]
+relative_files = true  # <-- Add this line
 omit = [
     "*/tests/*",
     "*/test_*",
